@@ -1,0 +1,283 @@
+
+:root {
+  --bg: #fbf7f1;
+  --card: #fff;
+  --ink: #1d1a17;
+  --mute: #6b625a;
+  --acc: #d9822b;
+  --acc2: #8a4a0f;
+  --line: #e8ddd0;
+  --code: #f4ece1;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171717;
+    --card: #232323;
+    --ink: #f4efe8;
+    --mute: #a79d92;
+    --acc: #e8933a;
+    --acc2: #f0b070;
+    --line: #363636;
+    --code: #2d2a27;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #171717;
+  --card: #232323;
+  --ink: #f4efe8;
+  --mute: #a79d92;
+  --acc: #e8933a;
+  --acc2: #f0b070;
+  --line: #363636;
+  --code: #2d2a27;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 16px 64px;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 25px; }
+h3 { font-size: 19px; }
+
+p {
+  margin: 0 0 10px;
+}
+
+.part {
+  color: var(--acc);
+  font: 700 12px/1 system-ui, sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin: 36px 0 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 0 14px;
+}
+
+.hero {
+  padding: 28px 20px;
+}
+
+.hero-part {
+  margin-top: 0;
+}
+
+.by {
+  color: var(--mute);
+  font-size: 15px;
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 14px;
+}
+
+.chips a {
+  flex: none;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14px;
+  background: var(--card);
+}
+
+.num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--acc);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+}
+
+.row div {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--code);
+}
+
+.row b {
+  display: block;
+  color: var(--acc2);
+}
+
+.mute {
+  color: var(--mute);
+  font-size: 15px;
+}
+
+.warn {
+  border-left: 4px solid var(--acc);
+}
+
+.bad, .good {
+  padding: 12px 14px;
+  border-radius: 12px;
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.bad {
+  background: #f8dcd8;
+  color: #6b1a12;
+}
+
+.good {
+  background: #d7ecd9;
+  color: #14401a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bad {
+    background: #3d1f1b;
+    color: #f3b9b2;
+  }
+
+  :root:not([data-theme="light"]) .good {
+    background: #1c3320;
+    color: #b4e0b9;
+  }
+}
+
+.fill {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+label {
+  font-size: 13px;
+  color: var(--mute);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: var(--code);
+  border-radius: 12px;
+  padding: 14px;
+  font: 15px/1.5 system-ui, sans-serif;
+  margin: 8px 0 10px;
+}
+
+.b {
+  color: var(--acc2);
+  font-weight: 600;
+}
+
+button, .btn {
+  display: inline-block;
+  background: var(--acc);
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 18px;
+  font: 600 16px system-ui, sans-serif;
+  text-decoration: none;
+  min-height: 46px;
+}
+
+button.done {
+  background: #2f8f46;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--acc2);
+  border: 1px solid var(--acc);
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0 0 10px;
+}
+
+li {
+  margin: 4px 0;
+}
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: var(--acc2);
+  text-align: center;
+  margin: 30px 0 0;
+}
+
+.spaced {
+  margin-top: 10px;
+}
+
+.section-heading {
+  margin-top: 14px;
+}
+
+.spaced-top {
+  margin-top: 14px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 14px;
+}

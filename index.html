@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Build Your First Website with AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+
+<section class="card hero" id="top">
+  <div class="part hero-part">Ondo Digital Media Summit</div>
+  <h1>Build your first website with AI</h1>
+  <p>An introduction to software development, then we build a real website together, on your phone.</p>
+  <p class="by">Akinlade John Adekunle · Software Engineer</p>
+</section>
+
+<nav class="chips">
+  <a href="#learn">1 · Learn</a>
+  <a href="#ai">2 · AI</a>
+  <a href="#prep">3 · Prepare</a>
+  <a href="#build">4 · Build</a>
+  <a href="#next">5 · Next</a>
+</nav>
+
+<div class="part" id="learn">Part 1 · Learn</div>
+
+<section class="card">
+  <h2>What is software development?</h2>
+  <div class="row">
+    <div><b>Software</b>A set of instructions that tells a computer what to do.</div>
+    <div><b>Developer</b>The person who writes those instructions.</div>
+    <div><b>Think of a recipe</b>The developer writes it. Your phone follows it step by step.</div>
+  </div>
+  <p class="mute spaced">You already use it: WhatsApp, Instagram, Opay, Bolt, Netflix.</p>
+</section>
+
+<section class="card">
+  <h2>Types of software careers</h2>
+  <div class="row">
+    <div><b>Frontend</b>What you see and tap. The shop window.</div>
+    <div><b>Backend</b>The hidden engine that stores data. The kitchen.</div>
+    <div><b>Mobile</b>Apps for Android and iPhone.</div>
+    <div><b>AI and data</b>Teaching computers to learn from data.</div>
+    <div><b>Other paths</b>Cybersecurity, games, UI/UX design, DevOps.</div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Why choose it?</h2>
+  <ul>
+    <li><b>High demand:</b> banks, schools, hospitals and shops all need software.</li>
+    <li><b>Good pay:</b> it grows with your skill, not only your years.</li>
+    <li><b>Work from anywhere:</b> live in Lagos, work for a company abroad.</li>
+    <li><b>Solve real problems:</b> transport, farming, health, education, payments.</li>
+    <li><b>Low cost to start:</b> a phone or laptop, data and discipline.</li>
+  </ul>
+</section>
+
+<div class="part" id="ai">Part 2 · AI changes the game</div>
+
+<section class="card">
+  <h2>AI is your navigator</h2>
+  <p>The internet has an information problem. The question is no longer “where is the information?” but “what do I need, in what order, and how do I apply it?”</p>
+  <p>AI helps you answer that. Today it can even help you build.</p>
+</section>
+
+<section class="card warn">
+  <h3>Use it wisely</h3>
+  <p>AI can hallucinate, carry bias, and make you dependent. Always check its answers, and use it to learn faster, not to skip learning.</p>
+</section>
+
+<section class="card">
+  <h2>Prompt engineering in 3 steps</h2>
+  <p><span class="num">1</span><b>Context.</b> Say who you are, what you know, and your situation.</p>
+  <p><span class="num">2</span><b>Goal → Constraints → Output.</b> What you want, your limits, and the format you need.</p>
+  <p><span class="num">3</span><b>Iterate.</b> Don’t accept the first answer. Challenge it and refine.</p>
+  <div class="bad"><b>Weak:</b> “Teach me web development.”</div>
+  <div class="good"><b>Strong:</b> “I’m a beginner with basic computer skills. My goal is a portfolio website in 90 days. I have 1 hour daily. Give me a weekly plan, flag prerequisites, and test me at each milestone.”</div>
+</section>
+
+<div class="part" id="prep">Part 3 · Get ready</div>
+
+<section class="card">
+  <h2>Before we build</h2>
+  <ul>
+    <li>Open <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a> and sign in.</li>
+    <li>Open <a href="https://lovable.dev" target="_blank" rel="noopener">lovable.dev</a> and sign in.</li>
+    <li>Keep this page open in one tab. Copy prompts from here, paste them into Claude or Lovable.</li>
+  </ul>
+
+  <h3 class="section-heading">Fill in once, prompts update</h3>
+  <div class="fill">
+    <div><label for="f-name">Your name</label><input id="f-name" data-in="name" placeholder="e.g. Ola"></div>
+    <div><label for="f-biz">Business or project name</label><input id="f-biz" data-in="biz" placeholder="e.g. Ola Stitches"></div>
+    <div><label for="f-what">What you make or offer</label><input id="f-what" data-in="what" placeholder="e.g. custom outfits for men and women"></div>
+    <div><label for="f-where">Where you are</label><input id="f-where" data-in="where" placeholder="e.g. Akure, Nigeria"></div>
+  </div>
+</section>
+
+<div class="part" id="build">Part 4 · Build</div>
+
+<section class="card">
+  <h3><span class="num">1</span>Tell Claude about you</h3>
+  <p class="mute">In Claude. Claude will ask you questions, answer them honestly.</p>
+  <pre id="p1">My name is <span class="b" data-k="name">[your name]</span>. I run <span class="b" data-k="biz">[business name]</span> in <span class="b" data-k="where">[location]</span>. I offer <span class="b" data-k="what">[what you make or offer]</span>. Most of my customers currently find me through Instagram, WhatsApp and referrals.
+Goal: I want to grow <span class="b" data-k="biz">[business name]</span> into a recognizable brand with a professional online presence.
+Act as my business and digital strategy adviser. Before recommending anything, ask me questions about my customers, products, pricing, location, sales channels, competitors, brand identity, goals and resources.
+I have a limited budget, so prioritize actions I can do myself with AI and affordable tools.</pre>
+  <button data-copy="p1">Copy prompt</button>
+</section>
+
+<section class="card">
+  <h3><span class="num">2</span>Define the website’s job</h3>
+  <p class="mute">Same Claude chat, after answering its questions.</p>
+  <pre id="p2">I want to create a website for <span class="b" data-k="biz">[business name]</span>. Don’t design it yet. Help me work out what the website needs to accomplish based on my business goals.</pre>
+  <button data-copy="p2">Copy prompt</button>
+</section>
+
+<section class="card">
+  <h3><span class="num">3</span>Collect design inspiration</h3>
+  <p>Search Pinterest for “<span class="b" data-k="what">[your type of business]</span> website design”. Screenshot 2 to 4 sites you like, upload them to Claude with this:</p>
+  <pre id="p3">These are visual references for the kind of website I like. Analyze them. Do not copy them. Explain the common characteristics: typography, spacing, imagery, navigation, layouts, colour usage, visual hierarchy and overall aesthetic.</pre>
+  <button data-copy="p3">Copy prompt</button>
+</section>
+
+<section class="card">
+  <h3><span class="num">4</span>Create the design brief</h3>
+  <pre id="p4">Using what you already know about <span class="b" data-k="biz">[business name]</span>, turn this into a complete website design brief for my brand.</pre>
+  <button data-copy="p4">Copy prompt</button>
+  <p class="mute spaced">Claude gives you a document. Copy all of its text.</p>
+</section>
+
+<section class="card">
+  <h3><span class="num">5</span>Build it in Lovable</h3>
+  <p class="mute">Open Lovable. Type this, then paste your whole brief under it.</p>
+  <pre id="p5">Help me create a website for my brand using the design brief below:</pre>
+  <button data-copy="p5">Copy prompt</button>
+  <p class="mute spaced">Send it and wait. Lovable builds a preview you can scroll on your phone.</p>
+</section>
+
+<section class="card">
+  <h3><span class="num">6</span>Make it yours and publish</h3>
+  <p>Lovable fills in dummy contact details. Replace them, one message at a time:</p>
+  <pre id="p6">For the WhatsApp contact, please use this number: <span class="b">[your number with country code]</span></pre>
+  <button data-copy="p6">Copy</button>
+  <pre id="p7" class="spaced-top">For Instagram, use this account: <span class="b">[your handle]</span></pre>
+  <button data-copy="p7">Copy</button>
+  <p class="spaced-top">Then tap <b>Publish</b> to get your link. Put it in your Instagram bio.</p>
+  <p class="mute">Don’t stop there. Keep improving: swap in real photos, prices and testimonials.</p>
+</section>
+
+<div class="part" id="next">Part 5 · Your next step</div>
+
+<section class="card">
+  <h2>This week</h2>
+  <p><span class="num">1</span><b>Choose a path.</b> Open <a href="https://roadmap.sh" target="_blank" rel="noopener">roadmap.sh</a> (free) and pick one.</p>
+  <p><span class="num">2</span><b>Learn daily.</b> 30 minutes on one small topic.</p>
+  <p><span class="num">3</span><b>Build one tiny project.</b> Even a simple page about yourself.</p>
+  <p><span class="num">4</span><b>Tell a friend.</b> Learn together.</p>
+  <p class="mute">Start with HTML, CSS and JavaScript, then Python, Git and GitHub. Mix self-learning, bootcamps, university and apprenticeships. A certificate opens the door, projects keep you in the room.</p>
+</section>
+
+<section class="card">
+  <h3>30-day challenge</h3>
+  <p>Pick one problem around you. Research it with AI and talk to real people who have it. Build the smallest solution. Put it in front of people and improve it from their feedback.</p>
+</section>
+
+<p class="quote">Don’t just consume the future. Build it.</p>
+<p class="by footer">ABBA 2026 · Akinlade John Adekunle</p>
+
+</main>
+</body>
+</html>
